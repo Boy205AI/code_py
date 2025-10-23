@@ -1,6 +1,14 @@
-// #pragma GCC optimize("O3,unroll-loops") 
+// ==================== OPTIMIZATION SETUP ====================
+#ifdef LOCAL
+    #pragma GCC optimize("O0")  // debug: không tối ưu, giữ nguyên code
+#else
+    #pragma GCC optimize("O3,unroll-loops,fast-math")  // bật tối ưu
+    #ifdef __x86_64__
+        #pragma GCC target("sse4.2,avx,popcnt")        // an toàn cho mọi CPU OJ
+    #endif
+#endif
+
 #include <bits/stdc++.h>
-#define LOCAL
 using namespace std;
 
 // ==================== I/O & FILE ====================
@@ -114,10 +122,9 @@ template<class T> inline void print(const T& x){ cout << x << endl; }
 template<class T> inline T sumv(const vector<T>& v){ T s=0; for (auto &e: v) s+=e; return s; }
 
 // ==================== SOLVE ====================
-// viết hàm solve() để dùng cho đa test
 void solve(){
-  // ---- YOUR CODE HERE ----
-  cout << "Hello World" << endl;
+	// ---- YOUR CODE HERE ----
+	cout << "Hello World" << endl;
 }
 
 int main(){
