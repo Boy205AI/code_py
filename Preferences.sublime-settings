@@ -1,0 +1,17 @@
+{
+    "theme": "OneDarkMaterial.sublime-theme",
+    "color_scheme": "Packages/One Dark Material - Theme/schemes/OneDark.tmTheme",
+    "font_face": "Fira Code",
+    "font_size": 10,
+    "line_padding_top": 3,
+    "line_padding_bottom": 3,
+    "highlight_line": true,
+    "caret_style": "smooth",
+    "bold_folder_labels": true,
+    "save_on_focus_lost": true,
+    "ignored_packages":
+    [
+		"Vintage",
+    ],
+    "index_files": true,
+}

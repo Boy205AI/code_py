@@ -1,0 +1,27 @@
+{
+    "shell_cmd": "\"D:/CPP/msys64/mingw64/bin/g++.exe\" -std=c++17 -Wall -DLOCAL \"${file}\" -o \"${file_base_name}.exe\" && \"${file_base_name}.exe\" < input.txt > output.txt",
+    "working_dir": "${file_path}",
+    "selector": "source.cpp",
+    "encoding": "utf-8",
+
+    "variants":
+    [
+        {
+            "name": "🧩 Run LOCAL Debug (-DLOCAL, O0)",
+            "shell_cmd": "\"D:/CPP/msys64/mingw64/bin/g++.exe\" -std=c++17 -Wall -DLOCAL -O0 \"${file}\" -o \"${file_base_name}.exe\" && \"${file_base_name}.exe\" < input.txt > output.txt"
+        },
+        {
+            "name": "⚙️ Run OJ Normal (-O2)",
+            "shell_cmd": "\"D:/CPP/msys64/mingw64/bin/g++.exe\" -std=c++17 -Wall -O2 \"${file}\" -o \"${file_base_name}.exe\" && \"${file_base_name}.exe\" < input.txt > output.txt"
+        },
+        {
+            "name": "🚀 Run OJ Max Optimize (-O3,unroll,fast-math)",
+            "shell_cmd": "\"D:/CPP/msys64/mingw64/bin/g++.exe\" -std=c++17 -Wall -O3 -funroll-loops -ffast-math \"${file}\" -o \"${file_base_name}.exe\" && \"${file_base_name}.exe\" < input.txt > output.txt"
+        },
+        {
+            "name": "💬 Run in CMD (interactive)",
+            "shell_cmd": "\"D:/CPP/msys64/mingw64/bin/g++.exe\" -std=c++17 -Wall -DLOCAL -O0 \"${file}\" -o \"${file_base_name}.exe\" && start cmd /k \"${file_base_name}.exe\"",
+            "shell": true
+        }
+    ]
+}
