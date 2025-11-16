@@ -1,0 +1,13 @@
+{
+    "default_language": "C++",
+    "C++": {
+        "header": [
+            "// File: ${file_name}",
+            "// Author: Le Xuan Nhat",
+            "// Created: ${date}",
+            "// Description: Auto template for contest",
+            "",
+            "${cppform}"
+        ]
+    }
+}
