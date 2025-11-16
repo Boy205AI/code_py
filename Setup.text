@@ -1,3 +1,4 @@
 Win + r
 paste: %APPDATA%\Sublime Text\Packages\User
 paste 3 file trên vô là xong
+pacman -S --needed mingw-w64-x86_64-gcc
